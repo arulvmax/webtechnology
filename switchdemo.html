@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>div{margin: 10px;}</style>
+        <script>
+            function show() {
+                var date = new Date();
+                var day="";
+                switch (date.getDay()) {
+                    case 0:
+                        day = "Sunday";
+                        break;
+                    case 1:
+                        day = "Monday";
+                        break;
+                    case 2:
+                        day = "Tuesday";
+                        break;
+                    case 3:
+                        day = "Wednesday";
+                        break;
+                    case 4:
+                        day = "Thursday";
+                        break;
+                    case 5:
+                        day = "Friday";
+                        break;
+                    case 6:
+                        day = "Saturday";
+                        break;
+                }
+                document.getElementById('result').innerHTML = "Today is "+day;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>The switch Statement</h1>
+        <h2>Display today's day name</h2>
+        <div>
+            <button onclick="show()">Show Day</button>
+        </div>
+        <div id="result" style="font-size: 25px;color:blue;margin:10px;"></div>
+    </body>
+</html>

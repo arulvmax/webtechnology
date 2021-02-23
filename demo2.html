@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #box {width:100px;height: 100px;border:1px solid blue;margin:10px;}
+        </style>
+        <script>
+           function change(){
+               var element=document.getElementById("box");
+               //change HTML attributes
+               element.className = "b1";
+               //change CSS Style
+               element.style.backgroundColor = "yellow";
+               element.style.color = "red";
+               element.style.width = "200px";
+               element.style.height = "200px";
+               
+               var image=document.getElementById('image');
+               image.src="bird.png";
+               image.style.width = "100px";
+               image.style.height="100px";
+           }
+        </script>
+    </head>
+    <body> 
+        <div>
+            <button onclick="change()">Change Style</button>
+        </div>
+        <div id='box'>Box Content</div>
+        <img id='image'>
+    </body>
+</html>

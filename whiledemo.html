@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            div { margin: 5px;}
+        </style>
+        <script>
+            function count(){
+                var num = parseInt(document.getElementById('num').value);
+                var digits = 0;
+                while(num>0)
+                {
+                    num = parseInt(num/10);
+                    digits++; 
+                }
+                document.getElementById('result').innerHTML = "Digits= "+digits;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>The while loop</h1>
+        <h2>Digit Counter</h2>
+        <div>
+            <input id="num" type="text" placeholder="Enter Number">
+        </div>
+        <div><button onclick="count()">CountDigits</button></div>
+        <div id="result" style="font-size: 25px;color:blue;margin:10px;"></div>
+    </body>
+
+</html>

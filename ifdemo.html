@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>div{margin: 10px;}</style>
+        <script>
+            function check(){
+                var username = document.getElementById('user').value;
+                var password = document.getElementById('pass').value;
+                if(username==="admin" && password==="admin"){
+                    alert("Login Successful");
+                }
+                else{
+                    alert("Login Failed.. Invalid Username / Password");
+                    document.getElementById('status').innerHTML = "Invalid Username / Password";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>The if else statement</h1>
+        <h2>Login Verification</h2>
+        <div>
+            <div>Username:</div>
+            <div>
+                <input id="user" type='text' placeholder="Enter Username:">
+            </div>
+            <div>Password:</div>
+            <div>
+                <input id="pass" type='password' placeholder="Enter Password:">
+            </div>
+            <div>
+                <input type="button" value="Login" onclick="check()">
+            </div>
+            <div id="status" style="color:red;font-size: 24px;"></div>
+        </div>
+    </body>
+</html>
